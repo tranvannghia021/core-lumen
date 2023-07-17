@@ -1,0 +1,43 @@
+{
+    "name": "devtvn/social-lumen",
+    "description": "This is a package management users.",
+    "type": "library support for lumen framework",
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^10.15",
+        "firebase/php-jwt": "^6.5",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "illuminate/redis": "^10.15",
+        "pusher/pusher-php-server": "^7.2",
+        "ext-rdkafka": "^6.0",
+        "league/flysystem": "^1.0.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Devtvn\\Social\\": "src/"
+        },
+        "files": [
+            "./src/Helpers/GlobalHelper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "tranvannghia021",
+            "email": "tranvannghia021@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devtvn\\Social\\CoreServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "scripts": {
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=core-social --ansi --force"
+        ]
+    }
+}
