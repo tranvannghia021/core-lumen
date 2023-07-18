@@ -32,7 +32,7 @@
 - Composer >= 2.x
 ## Install
 ```bash
-composer require devtvn/social-lumen
+composer require devtvn/sociallumen
 ```
 ## Setup
 -    Add the config behind in the file bootstrap/app.php
