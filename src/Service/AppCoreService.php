@@ -1,13 +1,13 @@
 <?php
 
-namespace Devtvn\Social\Service;
+namespace Devtvn\Sociallumen\Service;
 
-use Devtvn\Social\Facades\Core;
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Jobs\VerifyEmailJob;
-use Devtvn\Social\Repositories\CoreRepository;
-use Devtvn\Social\Service\Contracts\CoreContract;
-use Devtvn\Social\Traits\Response;
+use Devtvn\Sociallumen\Facades\Core;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Jobs\VerifyEmailJob;
+use Devtvn\Sociallumen\Repositories\CoreRepository;
+use Devtvn\Sociallumen\Service\Contracts\CoreContract;
+use Devtvn\Sociallumen\Traits\Response;
 use Illuminate\Support\Facades\Hash;
 
 

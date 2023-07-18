@@ -1,8 +1,7 @@
 <?php
-namespace Devtvn\Social\Ecommerces\Graphql;
-use GuzzleHttp\Client;
+namespace Devtvn\Sociallumen\Ecommerces\Graphql;
 
-class Request extends \Devtvn\Social\Ecommerces\RestApi\Request
+class Request extends \Devtvn\Sociallumen\Ecommerces\RestApi\Request
 {
     /**
      * @var mixed

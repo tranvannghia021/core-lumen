@@ -1,9 +1,9 @@
 <?php
 
-namespace Devtvn\Social\Ecommerces\RestApi;
+namespace Devtvn\Sociallumen\Ecommerces\RestApi;
 
-use Devtvn\Social\Ecommerces\AEcommerce;
-use Devtvn\Social\Helpers\EnumChannel;
+use Devtvn\Sociallumen\Ecommerces\AEcommerce;
+use Devtvn\Sociallumen\Helpers\EnumChannel;
 
 class Bitbucket extends AEcommerce
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Devtvn\Social\Service\SocialPlatform;
+namespace Devtvn\Sociallumen\Service\SocialPlatform;
 
-use Devtvn\Social\Facades\Social;
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Helpers\EnumChannel;
-use Devtvn\Social\Repositories\UserRepository;
-use Devtvn\Social\Service\ACoreService;
-use Devtvn\Social\Service\ICoreService;
-use Devtvn\Social\Traits\Response;
+use Devtvn\Sociallumen\Facades\Social;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Helpers\EnumChannel;
+use Devtvn\Sociallumen\Repositories\UserRepository;
+use Devtvn\Sociallumen\Service\ACoreService;
+use Devtvn\Sociallumen\Service\ICoreService;
+use Devtvn\Sociallumen\Traits\Response;
 use Illuminate\Support\Facades\Hash;
 
 class MicrosoftService extends ACoreService

@@ -1,8 +1,8 @@
 <?php
 
-namespace Devtvn\Social\Http\Requests;
+namespace Devtvn\Sociallumen\Http\Requests;
 
-use Devtvn\Social\Traits\Response;
+use Devtvn\Sociallumen\Traits\Response;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;

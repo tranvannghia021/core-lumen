@@ -1,8 +1,8 @@
 <?php
 
-namespace Devtvn\Social\Facades;
+namespace Devtvn\Sociallumen\Facades;
 
-use Devtvn\Social\Service\Contracts\PubSubContract;
+use Devtvn\Sociallumen\Service\Contracts\PubSubContract;
 use Illuminate\Support\Facades\Facade;
 /**
  * @method static PubSubContract send($message)

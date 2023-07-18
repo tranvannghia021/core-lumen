@@ -1,5 +1,5 @@
 {
-    "name": "devtvn/social-lumen",
+    "name": "devtvn/sociallumen",
     "description": "This is a package management users.",
     "type": "library support for lumen framework",
     "require": {
@@ -15,7 +15,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Devtvn\\Social\\": "src/"
+            "Devtvn\\Sociallumen\\": "src/"
         },
         "files": [
             "./src/Helpers/GlobalHelper.php"
@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Devtvn\\Social\\CoreServiceProvider"
+                "Devtvn\\Sociallumen\\CoreServiceProvider"
             ]
         }
     },

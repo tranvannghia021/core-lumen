@@ -1,26 +1,32 @@
 <?php
-use \Devtvn\Social\Http\Controllers\CoreController;
+define("CONTROLLER_CORE","\Devtvn\Sociallumen\Http\Controllers\CoreController@");
+define("CONTROLLER_APP","\Devtvn\Sociallumen\Http\Controllers\AppController@");
 
-Route::group(['prefix'=>'api','middleware'=>'global'],function(){
-    Route::prefix('{platform}')->controller(CoreController::class)->group(function(){
-        Route::post('generate-url', 'generateUrl');
+/** @var Router $router */
+use Laravel\Lumen\Routing\Router;
+
+
+Route::group(["prefix" => "api/app", "middleware" => "refresh"], function ($router) {
+    $router->post('refresh', CONTROLLER_APP."refresh");
+});
+Route::group(['prefix' => 'api', 'middleware' => 'global'], function ($router){
+    $router->group(['prefix' => '{platform}'], function ($router){
+        $router->post("generate-url",CONTROLLER_CORE."generateUrl");
     });
-    Route::get('handle/auth', [CoreController::class,'handleAuth'])->middleware(['social.auth','core.shopify']);
-    
-    Route::prefix('app')->controller(\Devtvn\Social\Http\Controllers\AppController::class)->group(function () {
-        Route::post('login', 'login');
-        Route::post('register', 'register');
-        Route::post('refresh','refresh')
-            ->withoutMiddleware(\Devtvn\Social\Http\Middleware\GlobalJwtMiddleware::class)
-            ->middleware('refresh');
-        Route::middleware('core')->group(function () {
-            Route::delete('delete','delete');
-            Route::get('info', 'user');
-            Route::post('info', 'updateUser');
-            Route::put('change-password', 'changePassword');
+    $router->group(["middleware" => ['social.auth', 'core.shopify']], function ($router) {
+        $router->get('handle/auth', CONTROLLER_CORE."handleAuth");
+    });
+
+    $router->group(["prefix" => "app"], function ($router) {
+        $router->post('login', CONTROLLER_APP."login");
+        $router->post('register', CONTROLLER_APP."register");
+        $router->group(["middleware" => 'core'], function ($router) {
+            $router->delete('delete', CONTROLLER_APP."delete");
+            $router->get('info', CONTROLLER_APP."user");
+            $router->post('info', CONTROLLER_APP."updateUser");
+            $router->put('change-password', CONTROLLER_APP."changePassword");
         });
-        Route::post('forgot-password','reset');
-        Route::post('re-send', 'reSendLinkEmail');
+        $router->post('forgot-password', CONTROLLER_APP."reset");
+        $router->post('re-send',CONTROLLER_APP."reSendLinkEmail");
     });
-    
 });

@@ -1,14 +1,14 @@
 <?php
 
-namespace Devtvn\Social\Service\SocialPlatform;
+namespace Devtvn\Sociallumen\Service\SocialPlatform;
 
 
-use Devtvn\Social\Ecommerces\RestApi\Tiktok;
-use Devtvn\Social\Facades\Social;
-use Devtvn\Social\Helpers\EnumChannel;
-use Devtvn\Social\Service\ACoreService;
-use Devtvn\Social\Service\ICoreService;
-use Devtvn\Social\Traits\Response;
+use Devtvn\Sociallumen\Ecommerces\RestApi\Tiktok;
+use Devtvn\Sociallumen\Facades\Social;
+use Devtvn\Sociallumen\Helpers\EnumChannel;
+use Devtvn\Sociallumen\Service\ACoreService;
+use Devtvn\Sociallumen\Service\ICoreService;
+use Devtvn\Sociallumen\Traits\Response;
 
 class TiktokService extends ACoreService
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Exceptions;
+namespace Devtvn\Sociallumen\Exceptions;
 
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 trait ExceptionTrait
 {
-    use \Devtvn\Social\Traits\Response;
+    use \Devtvn\Sociallumen\Traits\Response;
     /**
      * @param $request
      * @param $e

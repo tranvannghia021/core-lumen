@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Ecommerces\RestApi;
+namespace Devtvn\Sociallumen\Ecommerces\RestApi;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;

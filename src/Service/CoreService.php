@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Service;
+namespace Devtvn\Sociallumen\Service;
 
 class CoreService
 {
@@ -12,7 +12,7 @@ class CoreService
      */
     public static function setChannel(string $channel, array $variable = []): ?ACoreService
     {
-        $nameSpaces = '\Devtvn\Social\Service\SocialPlatform\\';
+        $nameSpaces = '\Devtvn\Sociallumen\Service\SocialPlatform\\';
         $path = __DIR__ . '/SocialPlatform/';
         $files = array_diff(scandir($path), ['..', '.']);
         foreach ($files as $file) {

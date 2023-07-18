@@ -1,10 +1,10 @@
 <?php
 
-namespace Devtvn\Social\Service\SocialPlatform;
+namespace Devtvn\Sociallumen\Service\SocialPlatform;
 
-use Devtvn\Social\Facades\Social;
-use Devtvn\Social\Helpers\EnumChannel;
-use Devtvn\Social\Service\ACoreService;
+use Devtvn\Sociallumen\Facades\Social;
+use Devtvn\Sociallumen\Helpers\EnumChannel;
+use Devtvn\Sociallumen\Service\ACoreService;
 use Illuminate\Support\Facades\Hash;
 
 class DropboxService extends ACoreService

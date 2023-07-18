@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Ecommerces\Graphql;
+namespace Devtvn\Sociallumen\Ecommerces\Graphql;
 
 class Shopify extends Request
 {

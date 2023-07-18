@@ -1,15 +1,15 @@
 <?php
 
-namespace Devtvn\Social\Http\Controllers;
+namespace Devtvn\Sociallumen\Http\Controllers;
 
-use Devtvn\Social\Facades\Core;
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Http\Requests\AppCore\ChangeRequest;
-use Devtvn\Social\Http\Requests\AppCore\LoginRequest;
-use Devtvn\Social\Http\Requests\AppCore\RegisterRequest;
-use Devtvn\Social\Http\Requests\AppCore\ResetRequest;
-use Devtvn\Social\Service\Contracts\CoreContract;
-use Devtvn\Social\Traits\Response;
+use Devtvn\Sociallumen\Facades\Core;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Http\Requests\AppCore\ChangeRequest;
+use Devtvn\Sociallumen\Http\Requests\AppCore\LoginRequest;
+use Devtvn\Sociallumen\Http\Requests\AppCore\RegisterRequest;
+use Devtvn\Sociallumen\Http\Requests\AppCore\ResetRequest;
+use Devtvn\Sociallumen\Service\Contracts\CoreContract;
+use Devtvn\Sociallumen\Traits\Response;
 use Illuminate\Http\Request;
 
 class AppController extends Controller

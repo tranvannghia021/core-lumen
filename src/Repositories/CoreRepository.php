@@ -1,8 +1,8 @@
 <?php
 
-namespace Devtvn\Social\Repositories;
+namespace Devtvn\Sociallumen\Repositories;
 
-use Devtvn\Social\Models\Core;
+use Devtvn\Sociallumen\Models\Core;
 
 class CoreRepository extends BaseRepository
 {

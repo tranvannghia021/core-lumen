@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Service;
+namespace Devtvn\Sociallumen\Service;
 
 interface ICoreService
 {

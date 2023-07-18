@@ -27,25 +27,27 @@
 
 
 ## Required
-- Php >= 7.4
-- Laravel >= 8.x 
+- Php >= 8.x
+- Lumen >= 8.x 
 - Composer >= 2.x
 ## Install
 ```bash
-composer require devtvn/social
+composer require devtvn/social-lumen
 ```
 ## Setup
--    Add the config behind in the file kernel.php
+-    Add the config behind in the file bootstrap/app.php
 
 ```php
-protected $middlewareGroups = [
-   ...
+$app->routeMiddleware([
+    "api"=> \Devtvn\Social\Http\Middleware\GlobalJwtMiddleware::class,
+]);
+$app->register(Illuminate\Redis\RedisServiceProvider::class);
+$app->register(\Devtvn\Sociallumen\CoreServiceProvider::class);
+$app->configure('database');
+$app->configure('social');
+$app->withFacades();
+$app->withEloquent();
 
-        'api' => [
-           ...
-            \Devtvn\Social\Http\Middleware\GlobalJwtMiddleware::class
-        ],
-    ];
 ```
 
 

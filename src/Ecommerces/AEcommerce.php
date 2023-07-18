@@ -1,10 +1,11 @@
 <?php
 
-namespace Devtvn\Social\Ecommerces;
+namespace Devtvn\Sociallumen\Ecommerces;
 
-use Devtvn\Social\Ecommerces\Constract\IEcommerce;
-use Devtvn\Social\Ecommerces\RestApi\Request;
-use Devtvn\Social\Helpers\CoreHelper;
+
+use Devtvn\Sociallumen\Ecommerces\Contracts\IEcommerce;
+use Devtvn\Sociallumen\Ecommerces\RestApi\Request;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
 
 abstract class AEcommerce extends Request implements IEcommerce
 {

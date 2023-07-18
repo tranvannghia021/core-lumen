@@ -1,11 +1,11 @@
 <?php
 
-namespace Devtvn\Social\Http\Controllers;
+namespace Devtvn\Sociallumen\Http\Controllers;
 
-use Devtvn\Social\Facades\Core;
-use Devtvn\Social\Facades\Social;
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Helpers\EnumChannel;
+
+use Devtvn\Sociallumen\Facades\Social;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Helpers\EnumChannel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redis;

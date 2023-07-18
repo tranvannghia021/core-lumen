@@ -1,9 +1,9 @@
 <?php
 
-namespace Devtvn\Social\Http\Middleware;
+namespace Devtvn\Sociallumen\Http\Middleware;
 
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Traits\Response;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Traits\Response;
 use Closure;
 use Illuminate\Http\Request;
 use Mockery\Exception;

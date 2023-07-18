@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Exceptions;
+namespace Devtvn\Sociallumen\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;

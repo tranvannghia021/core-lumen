@@ -1,8 +1,8 @@
 <?php
 
-namespace Devtvn\Social\Http\Requests\AppCore;
+namespace Devtvn\Sociallumen\Http\Requests\AppCore;
 
-use Devtvn\Social\Http\Requests\BaseRequest;
+use Devtvn\Sociallumen\Http\Requests\BaseRequest;
 
 class RegisterRequest extends BaseRequest
 {

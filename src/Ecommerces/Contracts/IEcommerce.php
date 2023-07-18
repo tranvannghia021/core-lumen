@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Ecommerces\Constract;
+namespace Devtvn\Sociallumen\Ecommerces\Contracts;
 
 interface IEcommerce
 {

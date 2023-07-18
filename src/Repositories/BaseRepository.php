@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Repositories;
+namespace Devtvn\Sociallumen\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
 

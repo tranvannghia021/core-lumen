@@ -1,4 +1,7 @@
 <?php
 
-$namespace='Devtvn\Social\Http\Controllers';
-Route::namespace($namespace)->get('/verify',[\Devtvn\Social\Http\Controllers\AppController::class,'verify'])->middleware('auth.verify');
+/** @var Router $router */
+use Laravel\Lumen\Routing\Router;
+Route::group(["middleware"=>"auth.verify"],function ($router){
+    $router->get("verify",CONTROLLER_APP."verify");
+});

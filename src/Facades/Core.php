@@ -1,15 +1,15 @@
 <?php
 
-namespace Devtvn\Social\Facades;
+namespace Devtvn\Sociallumen\Facades;
 
-use Devtvn\Social\Service\Contracts\CoreContract;
+use Devtvn\Sociallumen\Service\Contracts\CoreContract;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Devtvn\Social\Service\Contracts\CoreContract user()
- * @method static \Devtvn\Social\Service\Contracts\CoreContract check()
- * @method static \Devtvn\Social\Service\Contracts\CoreContract setUser(array $user)
- * @see \Devtvn\Social\Service\Contracts\CoreContract
+ * @method static \Devtvn\Sociallumen\Service\Contracts\CoreContract user()
+ * @method static \Devtvn\Sociallumen\Service\Contracts\CoreContract check()
+ * @method static \Devtvn\Sociallumen\Service\Contracts\CoreContract setUser(array $user)
+ * @see \Devtvn\Sociallumen\Service\Contracts\CoreContract
  *
  */
 class Core extends Facade

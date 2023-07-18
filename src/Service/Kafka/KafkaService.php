@@ -1,6 +1,6 @@
 <?php
-namespace Devtvn\Social\Service\Kafka;
-use Devtvn\Social\Service\Contracts\KafkaContract;
+namespace Devtvn\Sociallumen\Service\Kafka;
+use Devtvn\Sociallumen\Service\Contracts\KafkaContract;
 
 class KafkaService implements KafkaContract
 {

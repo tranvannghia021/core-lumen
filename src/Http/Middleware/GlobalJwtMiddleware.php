@@ -1,10 +1,10 @@
 <?php
 
-namespace Devtvn\Social\Http\Middleware;
+namespace Devtvn\Sociallumen\Http\Middleware;
 
-use Devtvn\Social\Facades\Core;
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Repositories\UserRepository;
+use Devtvn\Sociallumen\Facades\Core;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Repositories\UserRepository;
 use Closure;
 use Illuminate\Http\Request;
 

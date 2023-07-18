@@ -1,8 +1,8 @@
 <?php
 
-namespace Devtvn\Social\Jobs;
+namespace Devtvn\Sociallumen\Jobs;
 
-use Devtvn\Social\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;

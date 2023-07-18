@@ -1,11 +1,11 @@
 <?php
 
-namespace Devtvn\Social\Service\SocialPlatform;
+namespace Devtvn\Sociallumen\Service\SocialPlatform;
 
-use Devtvn\Social\Facades\Social;
-use Devtvn\Social\Helpers\EnumChannel;
-use Devtvn\Social\Service\ACoreService;
-use Devtvn\Social\Traits\Response;
+use Devtvn\Sociallumen\Facades\Social;
+use Devtvn\Sociallumen\Helpers\EnumChannel;
+use Devtvn\Sociallumen\Service\ACoreService;
+use Devtvn\Sociallumen\Traits\Response;
 use Illuminate\Support\Facades\Hash;
 
 class BitbucketService extends ACoreService

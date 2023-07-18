@@ -1,10 +1,10 @@
 <?php
 
-namespace Devtvn\Social\Http\Controllers;
+namespace Devtvn\Sociallumen\Http\Controllers;
 
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Helpers\EnumChannel;
-use Devtvn\Social\Service\CoreService;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Helpers\EnumChannel;
+use Devtvn\Sociallumen\Service\CoreService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Mockery\Exception;
@@ -34,6 +34,7 @@ class CoreController extends Controller
      * @return array|\Illuminate\Http\RedirectResponse
      */
     public function handleAuth(Request $request){
+
         if(CoreHelper::handleErrorSocial($request)){
             return ['status'=>false,'error'=>'Auth failed'];
         }

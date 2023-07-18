@@ -1,5 +1,5 @@
 <?php
-namespace Devtvn\Social\commands;
+namespace Devtvn\Sociallumen\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Arr;

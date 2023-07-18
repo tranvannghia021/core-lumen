@@ -1,16 +1,13 @@
 <?php
 
-namespace Devtvn\Social\Models;
+namespace Devtvn\Sociallumen\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
 
-class Core extends Authenticatable
+class Core extends Model
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use  HasFactory;
 
     /**
      * @var array

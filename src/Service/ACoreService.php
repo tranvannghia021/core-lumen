@@ -1,10 +1,10 @@
 <?php
 
-namespace Devtvn\Social\Service;
+namespace Devtvn\Sociallumen\Service;
 
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Repositories\CoreRepository;
-use Devtvn\Social\Traits\Response;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Repositories\CoreRepository;
+use Devtvn\Sociallumen\Traits\Response;
 
 abstract class ACoreService implements ICoreService
 {

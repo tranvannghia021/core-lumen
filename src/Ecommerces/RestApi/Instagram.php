@@ -1,10 +1,10 @@
 <?php
 
-namespace Devtvn\Social\Ecommerces\RestApi;
+namespace Devtvn\Sociallumen\Ecommerces\RestApi;
 
-use Devtvn\Social\Ecommerces\AEcommerce;
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Helpers\EnumChannel;
+use Devtvn\Sociallumen\Ecommerces\AEcommerce;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Helpers\EnumChannel;
 
 class Instagram extends AEcommerce
 {
@@ -63,7 +63,7 @@ class Instagram extends AEcommerce
     public function profile()
     {
         return $this->getRequest("$this->endpoint/me?" . http_build_query([
-                'fields' => implode(',', config('social.platform.instagram_basic.field')),
+                'fields' => implode(',', config('social.platform.instagram.field')),
                 'access_token' => $this->token
             ]));
     }

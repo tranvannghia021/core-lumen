@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Http\Middleware;
+namespace Devtvn\Sociallumen\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;

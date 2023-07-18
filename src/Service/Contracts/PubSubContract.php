@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Service\Contracts;
+namespace Devtvn\Sociallumen\Service\Contracts;
 
 interface PubSubContract
 {

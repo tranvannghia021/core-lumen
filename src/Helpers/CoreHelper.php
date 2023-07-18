@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Helpers;
+namespace Devtvn\Sociallumen\Helpers;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;

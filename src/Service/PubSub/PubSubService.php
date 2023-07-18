@@ -1,8 +1,8 @@
 <?php
 
-namespace Devtvn\Social\Service\PubSub;
+namespace Devtvn\Sociallumen\Service\PubSub;
 
-use Devtvn\Social\Service\Contracts\PubSubContract;
+use Devtvn\Sociallumen\Service\Contracts\PubSubContract;
 use Illuminate\Support\Facades\Redis;
 use Mockery\Exception;
 

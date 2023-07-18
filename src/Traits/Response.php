@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Traits;
+namespace Devtvn\Sociallumen\Traits;
 
 use \Illuminate\Http\Response as Code;
 

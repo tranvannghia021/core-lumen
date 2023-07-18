@@ -1,5 +1,5 @@
 <?php
-namespace Devtvn\Social\Repositories;
+namespace Devtvn\Sociallumen\Repositories;
 interface IRepository
 {
     /**

@@ -1,11 +1,11 @@
 <?php
 
-namespace Devtvn\Social\Ecommerces\RestApi;
+namespace Devtvn\Sociallumen\Ecommerces\RestApi;
 
-use Devtvn\Social\Ecommerces\AEcommerce;
-use Devtvn\Social\Facades\Core;
-use Devtvn\Social\Helpers\CoreHelper;
-use Devtvn\Social\Helpers\EnumChannel;
+use Devtvn\Sociallumen\Ecommerces\AEcommerce;
+use Devtvn\Sociallumen\Facades\Core;
+use Devtvn\Sociallumen\Helpers\CoreHelper;
+use Devtvn\Sociallumen\Helpers\EnumChannel;
 
 class Microsoft extends AEcommerce
 {

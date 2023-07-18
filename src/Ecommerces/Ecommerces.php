@@ -1,6 +1,6 @@
 <?php
 
-namespace Devtvn\Social\Ecommerces;
+namespace Devtvn\Sociallumen\Ecommerces;
 
 class Ecommerces
 {
@@ -11,7 +11,7 @@ class Ecommerces
      */
     public static function driver($channel): ?AEcommerce
     {
-        $nameSpaces = '\Devtvn\Social\Ecommerces\RestApi\\';
+        $nameSpaces = '\Devtvn\Sociallumen\Ecommerces\RestApi\\';
         $path = __DIR__ . '/RestApi/';
         $files = array_diff(scandir($path), ['..', '.', 'Request.php']);
         foreach ($files as $file) {
